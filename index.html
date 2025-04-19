@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla x EDF Eco Impact Survey</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Pop-up Modal -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="close-popup" class="close">&times;</span>
+            <img src="https://www.tesla.com/xNVh4yUEc3B9/04_Desktop.jpg" alt="Tesla Model X" class="popup-image">
+            <p>Complete the simple task to stand a chance to win the Tesla Model X!</p>
+        </div>
+    </div>
+
+    <header>
+        <div class="logo-container">
+            <img src="https://www.edf.org/sites/default/files/logo-edf.png" alt="EDF Logo" class="logo">
+            <span class="collab">In Collaboration with Environmental Defense Fund, Sponsored by Tesla</span>
+        </div>
+        <h1>Win a Tesla Model X</h1>
+        <p>Take our Eco Impact Survey to assess the role of EVs in sustainability and enter to win a $100,000 Tesla Model X Platinum Edition!</p>
+    </header>
+
+    <main>
+        <section id="quote-section">
+            <blockquote>
+                "Partnering with the Environmental Defense Fund, Tesla is driving innovation to protect our planet’s ecosystems. Sustainable energy is the future, and together, we’re making it happen." — Elon Musk, CEO of Tesla
+            </blockquote>
+        </section>
+
+        <section id="quiz-section">
+            <h2>Eco Impact Survey</h2>
+            <p>Test your knowledge on electric vehicles and their environmental benefits. Complete the survey for a chance to win!</p>
+            <form id="quiz-form">
+                <div class="question">
+                    <p>1. How much CO2 does an EV save annually compared to a gas car?</p>
+                    <label><input type="radio" name="q1" value="a"> 1 ton</label>
+                    <label><input type="radio" name="q1" value="b"> 4 tons</label>
+                    <label><input type="radio" name="q1" value="c"> 10 tons</label>
+                    <span class="error" id="q1-error">Please select an answer.</span>
+                </div>
+                <div class="question">
+                    <p>2. What percentage of global electricity came from renewables in 2024?</p>
+                    <label><input type="radio" name="q2" value="a"> 10%</label>
+                    <label><input type="radio" name="q2" value="b"> 30%</label>
+                    <label><input type="radio" name="q2" value="c"> 50%</label>
+                    <span class="error" id="q2-error">Please select an answer.</span>
+                </div>
+                <div class="question">
+                    <p>3. How long does a Tesla battery typically last?</p>
+                    <label><input type="radio" name="q3" value="a"> 5 years</label>
+                    <label><input type="radio" name="q3" value="b"> 10 years</label>
+                    <label><input type="radio" name="q3" value="c"> 20 years</label>
+                    <span class="error" id="q3-error">Please select an answer.</span>
+                </div>
+                <div class="question">
+                    <p>4. Which material is most recycled in EV batteries?</p>
+                    <label><input type="radio" name="q4" value="a"> Lithium</label>
+                    <label><input type="radio" name="q4" value="b"> Steel</label>
+                    <label><input type="radio" name="q4" value="c"> Plastic</label>
+                    <span class="error" id="q4-error">Please select an answer.</span>
+                </div>
+                <div class="question">
+                    <p>5. How do EVs impact urban air quality?</p>
+                    <label><input type="radio" name="q5" value="a"> No effect</label>
+                    <label><input type="radio" name="q5" value="b"> Slight improvement</label>
+                    <label><input type="radio" name="q5" value="c"> Major improvement</label>
+                    <span class="error" id="q5-error">Please select an answer.</span>
+                </div>
+                <div class="question">
+                    <p>6. What is the primary energy source for Tesla’s Gigafactory?</p>
+                    <label><input type="radio" name="q6" value="a"> Coal</label>
+                    <label><input type="radio" name="q6" value="b"> Solar</label>
+                    <label><input type="radio" name="q6" value="c"> Nuclear</label>
+                    <span class="error" id="q6-error">Please select an answer.</span>
+                </div>
+                <div class="question">
+                    <p>7. How much water is saved by EVs compared to gas vehicles annually?</p>
+                    <label><input type="radio" name="q7" value="a"> 50 gallons</label>
+                    <label><input type="radio" name="q7" value="b"> 500 gallons</label>
+                    <label><input type="radio" name="q7" value="c"> 5,000 gallons</label>
+                    <span class="error" id="q7-error">Please select an answer.</span>
+                </div>
+                <div class="question">
+                    <p>8. Which gas is most reduced by using EVs?</p>
+                    <label><input type="radio" name="q8" value="a"> Nitrogen Oxide</label>
+                    <label><input type="radio" name="q8" value="b"> Sulfur Dioxide</label>
+                    <label><input type="radio" name="q8" value="c"> Carbon Monoxide</label>
+                    <span class="error" id="q8-error">Please select an answer.</span>
+                </div>
+                <div class="question">
+                    <p>9. What percentage of Tesla vehicles are recyclable?</p>
+                    <label><input type="radio" name="q9" value="a"> 50%</label>
+                    <label><input type="radio" name="q9" value="b"> 75%</label>
+                    <label><input type="radio" name="q9" value="c"> 90%</label>
+                    <span class="error" id="q9-error">Please select an answer.</span>
+                </div>
+                <div class="question">
+                    <p>10. How does EDF contribute to EV adoption?</p>
+                    <label><input type="radio" name="q10" value="a"> Policy advocacy</label>
+                    <label><input type="radio" name="q10" value="b"> Manufacturing EVs</label>
+                    <label><input type="radio" name="q10" value="c"> Selling EVs</label>
+                    <span class="error" id="q10-error">Please select an answer.</span>
+                </div>
+                <button type="submit" id="submit-quiz">Submit Answers</button>
+            </form>
+        </section>
+
+        <section id="win-section" class="hidden">
+            <h2>Congratulations!</h2>
+            <p>You’ve qualified to win a Tesla Model X Platinum Edition worth $100,000!</p>
+            <img src="https://via.placeholder.com/600x300?text=Tesla+Model+X" alt="Tesla Model X" class="car-image">
+            <h3>Enter Your Details</h3>
+            <p>Please provide your details via the form below to verify eligibility and process your entry.</p>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdfIjx44maAODSfTAN1bg9qjFbGkqZGTt0rVXF2-71uDilviw/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Tesla x Environmental Defense Fund. All rights reserved.</p>
+        <p>Terms & Conditions | Privacy Policy</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
